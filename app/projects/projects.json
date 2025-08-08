@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "project_name": "TaskMaster",
+    "description": "TaskMaster is a full-stack application that allows users to create, update, and delete tasks. It features a simple and intuitive user interface, built with a modern design system, enabling users to manage their personal or work-related tasks efficiently.",
+    "icon": "list-task",
+    "stack": {
+      "frontend": ["React", "TailwindCSS", "DaisyUI"],
+      "backend": ["Node.js", "Express"],
+      "database": ["MongoDB", "SQLite"],
+      "authentication": "JWT-based authentication"
+    },
+    "features": [
+      "Task categorization",
+      "Due dates and reminders",
+      "Dark mode support",
+      "User authentication with secure login"
+    ],
+    "role": "Software Engineer — Full-stack development, implemented task logic and authentication."
+  },
+  {
+    "id": 2,
+    "project_name": "ShopEase",
+    "description": "ShopEase is a fully functional e-commerce platform that allows users to browse products, add them to their cart, and place orders. It includes features like product filtering, payment gateway integration, and order tracking.",
+    "icon": "cart-check",
+    "stack": {
+      "frontend": ["Next.js", "TailwindCSS", "DaisyUI"],
+      "backend": ["Node.js", "Express"],
+      "database": ["PostgreSQL", "MongoDB"],
+      "authentication": "JWT-based authentication"
+    },
+    "features": [
+      "Product listing and search",
+      "Shopping cart and checkout process",
+      "Order status tracking",
+      "User authentication and profile management"
+    ],
+    "role": "Software Engineer — Built UI components and backend routes for cart and checkout."
+  },
+  {
+    "id": 3,
+    "project_name": "BlogSpace",
+    "description": "BlogSpace is a blogging platform that allows users to publish and share blog posts. It features a rich text editor for creating posts, categories for organizing content, and an integrated commenting system for interaction.",
+    "icon": "rss",
+    "stack": {
+      "frontend": ["React", "TailwindCSS", "DaisyUI"],
+      "backend": ["Node.js", "Express"],
+      "database": ["MongoDB"],
+      "authentication": "Google OAuth or email/password authentication"
+    },
+    "features": [
+      "WYSIWYG editor for posts",
+      "Categorization of posts",
+      "User authentication",
+      "Comment system for each post"
+    ],
+    "role": "Software Engineer — Developed post editor and integrated user authentication."
+  },
+  {
+    "id": 4,
+    "project_name": "WeatherNow",
+    "description": "WeatherNow is a weather dashboard that displays real-time weather information based on the user's location or a location of choice. It includes forecasts, temperature, wind speed, and other weather metrics.",
+    "icon": "cloud-lightning-rain",
+    "stack": {
+      "frontend": ["React", "TailwindCSS", "DaisyUI"],
+      "api": "OpenWeatherMap API",
+      "state_management": "React Context or Redux"
+    },
+    "features": [
+      "Display current weather data",
+      "Search for weather by city",
+      "Hourly/daily forecast",
+      "Auto-detect user location",
+      "Dark mode toggle"
+    ],
+    "role": "Software Engineer — Integrated API and built forecast components."
+  },
+  {
+    "id": 5,
+    "project_name": "FitTrack",
+    "description": "FitTrack is a fitness tracking application that allows users to log workouts, monitor progress, and set fitness goals. The platform includes dashboards, charts, and personalized recommendations.",
+    "icon": "person-arms-up",
+    "stack": {
+      "frontend": ["Next.js", "Chakra UI"],
+      "backend": ["Node.js", "Express"],
+      "database": ["MongoDB"],
+      "authentication": "JWT + Google OAuth"
+    },
+    "features": [
+      "Workout logging and calendar view",
+      "Progress charts using Chart.js",
+      "Goal setting and tracking",
+      "Responsive design for mobile users"
+    ],
+    "role": "Software Engineer — Built workout logging UI and implemented progress tracking logic."
+  },
+  {
+    "id": 6,
+    "project_name": "InstaClone",
+    "description": "InstaClone is a social media icon-sharing platform inspired by Instagram. Users can upload photos, follow others, like posts, and comment in real-time.",
+    "icon": "instagram",
+    "stack": {
+      "frontend": ["React", "TailwindCSS"],
+      "backend": ["Firebase"],
+      "authentication": "Firebase Auth"
+    },
+    "features": [
+      "Photo upload with preview",
+      "Follow/unfollow users",
+      "Real-time notifications and comments",
+      "User profiles and feed"
+    ],
+    "role": "Software Engineer — Implemented Firebase backend and real-time features."
+  },
+  {
+    "id": 7,
+    "project_name": "DevHub",
+    "description": "DevHub is a developer portfolio and blogging site that allows developers to showcase projects and write technical articles. It includes a CMS-like admin dashboard.",
+    "icon": "code-slash",
+    "stack": {
+      "frontend": ["Next.js", "TailwindCSS", "TypeScript"],
+      "backend": ["Strapi"],
+      "database": ["PostgreSQL"],
+      "authentication": "JWT-based authentication"
+    },
+    "features": [
+      "Developer portfolio display",
+      "Blog post creation with markdown support",
+      "Admin dashboard for managing content",
+      "Contact form with email integration"
+    ],
+    "role": "Software Engineer — Developed portfolio templates and connected CMS backend."
+  },
+  {
+    "id": 8,
+    "project_name": "QuickChat",
+    "description": "QuickChat is a real-time chat app with support for private and group messaging. It includes emoji support, typing indicators, and online presence tracking.",
+    "icon": "wechat",
+    "stack": {
+      "frontend": ["React", "TailwindCSS"],
+      "backend": ["Node.js", "Socket.io"],
+      "database": ["MongoDB"],
+      "authentication": "JWT-based authentication"
+    },
+    "features": [
+      "Real-time 1-on-1 and group chats",
+      "Online/offline presence",
+      "Emoji support and message history",
+      "Typing indicators and notifications"
+    ],
+    "role": "Software Engineer — Implemented real-time messaging and Socket.io integration."
+  }
+]
