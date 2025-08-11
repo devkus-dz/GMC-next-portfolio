@@ -1,31 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "img.daisyui.com",
-      },
-      {
-        protocol: "https",
-        hostname: "a.storyblok.com",
-      },
-      {
-        protocol: "https",
-        hostname: "www.synergymktsolutions.com",
-      },
-      {
-        protocol: "https",
-        hostname: "images04.nicepage.com",
-      },
-      {
-        protocol: "https",
-        hostname: "play-lh.googleusercontent.com",
-      },
-    ],
+  turbopack: {
+    // ...
   },
-
   reactStrictMode: true,
 
   webpack(config, { isServer }) {
@@ -34,14 +12,14 @@ const nextConfig: NextConfig = {
     }
 
     // Handle CSS imports
-    config.module.rules.push({
-      test: /\.css$/,
-      use: [
-        "style-loader", // Injects styles into the DOM
-        "css-loader", // Translates CSS into CommonJS
-        "postcss-loader", // Applies PostCSS transformations
-      ],
-    });
+    // config.module.rules.push({
+    //   test: /\.css$/,
+    //   use: [
+    //     "style-loader", // Injects styles into the DOM
+    //     "css-loader", // Translates CSS into CommonJS
+    //     "postcss-loader", // Applies PostCSS transformations
+    //   ],
+    // });
 
     console.log(config); // Log Webpack config for debugging
     return config;

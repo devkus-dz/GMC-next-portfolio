@@ -1,7 +1,7 @@
 "use client"
 
 export default function ProgressCard({data}:{data:any[]}) {
-    console.log(data);
+   
   return (
     <>    
         {data && (

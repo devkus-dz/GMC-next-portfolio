@@ -1,5 +1,3 @@
-
-
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/ProjectsData";
 import Education from "@/components/sections/Education";
