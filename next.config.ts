@@ -12,14 +12,11 @@ const nextConfig: NextConfig = {
     }
 
     // Handle CSS imports
-    // config.module.rules.push({
-    //   test: /\.css$/,
-    //   use: [
-    //     "style-loader", // Injects styles into the DOM
-    //     "css-loader", // Translates CSS into CommonJS
-    //     "postcss-loader", // Applies PostCSS transformations
-    //   ],
-    // });
+    config.module.rules.push({
+      test: /\.css$/,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    });
 
     console.log(config); // Log Webpack config for debugging
     return config;

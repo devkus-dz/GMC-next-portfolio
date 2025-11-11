@@ -11,7 +11,7 @@ export default function Project({
         description,
         icon
     }:{
-        id:number,
+        id:string,
         project_name:string, 
         description:string,
         icon:string
