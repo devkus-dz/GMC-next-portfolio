@@ -32,7 +32,7 @@ interface ApiResponse {
 const getProjectById = async (projectId: string): Promise<Project | null> => {
     // Construct the absolute API path
     const apiRoute = `${process.env.NEXT_PUBLIC_BASE_URL}/api/projects/${projectId}`;
-
+    console.log(projectId);
     try {
         const response = await fetch(apiRoute, { cache: 'no-store' }); 
 
@@ -66,7 +66,7 @@ export default async function ProjectPage({params} : {params: {projectId: string
     
     // We already have projectId directly from params, no need for await
     const { projectId } = await params;
-    
+
     // Fetch the single project
     const project = await getProjectById(projectId);
 

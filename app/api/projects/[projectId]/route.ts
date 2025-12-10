@@ -6,13 +6,12 @@ import { NextRequest } from 'next/server';
 
 // Define the handler for GET requests to /api/projects/[projectId]
 export async function GET(
-  request: NextRequest,
-  // The 'params' object is the second argument, holding the dynamic segment
-  { params }: { params: { projectId: string } } 
+  request: NextRequest, 
+  { params }: { params: Promise<{ projectId: string }> }
 ) {
 
-  const resolvedParams = await params;
-  const projectId = resolvedParams.projectId;
+  const { projectId } = await params;
+  console.log("DEBUG ROUTE.TS: Received projectId:", projectId);
   
   // You can also try: const { projectId } = await params; 
   // but using a separate line for clarity and reliability often helps with these Next.js quirks.

@@ -14,22 +14,22 @@
     "dotenv": "^17.2.3",
     "mongodb": "^7.0.0",
     "mongoose": "^8.19.3",
-    "next": "15.4.4",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "next": "^16.0.8",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/aos": "^3.0.7",
-    "@types/mongodb": "^4.0.6",
-    "@types/node": "^20.19.24",
-    "@types/react": "^19.2.3",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^24.10.2",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19",
     "css-loader": "^7.1.2",
     "postcss-loader": "^8.1.1",
     "style-loader": "^4.0.0",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   }
 }
