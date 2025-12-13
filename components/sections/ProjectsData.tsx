@@ -23,9 +23,10 @@ interface ApiResponse {
 }
 
 // 4. Update the data fetching function to use the internal API route
+
 const getProjects = async (): Promise<Project[]> => {
-    // IMPORTANT: Fetching from a Server Component should use the full URL 
-    // or a relative path, which Next.js optimizes for server-to-server calls.
+
+    console.log(`DEBUG_BASE_URL: ${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`);
     const apiRoute = `${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`; 
 
     try {
