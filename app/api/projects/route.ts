@@ -9,11 +9,6 @@ export async function GET(request: Request) {
   try {
     // 1. Await the cached client connection
     const client: MongoClient = await clientPromise;
-    
-    // --- CONSOLE LOG CHECK (FIXED) ---
-    // This log will appear in your server terminal when the route is hit.
-    console.log(`📡 MongoDB Client Status: Connection successful and ready for use.`);
-    // --- END CHECK ---
 
     // 2. Specify the database
     const db = client.db(process.env.MONGODB_DB);
@@ -28,8 +23,6 @@ export async function GET(request: Request) {
     const message = projects.length > 0 
         ? `Successfully connected and retrieved ${projects.length} projects.` 
         : "Connected, but the 'projects' collection is empty.";
-
-    console.log(`Database message: ${message}`);
 
     // 4. Return the data using the standard Web Response object
     return new Response(

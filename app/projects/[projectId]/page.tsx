@@ -4,7 +4,6 @@
 import Cta from '@/components/sections/Cta';
 import { notFound } from 'next/navigation';
 
-// 1. Define the full structure of your project, including the stack fields
 interface Project {
     _id: string; // MongoDB ID
     icon: string;
@@ -32,7 +31,6 @@ interface ApiResponse {
 const getProjectById = async (projectId: string): Promise<Project | null> => {
     // Construct the absolute API path
     const apiRoute = `${process.env.NEXT_PUBLIC_BASE_URL}/api/projects/${projectId}`;
-    console.log(projectId);
     try {
         const response = await fetch(apiRoute, { cache: 'no-store' }); 
 
